@@ -32,7 +32,7 @@ jobs:
           python3 -m pip install xmljson requests python-dateutil
 
       - name: Fetch forge-metadata changes
-        id: fetch_changes
+        id: fetch_forge_changes
         shell: bash
         run: |
           cd ./forge/scripts
@@ -44,7 +44,7 @@ jobs:
           cd ../..
 
       - name: Fetch optifine-metadata changes
-        id: fetch_changes
+        id: fetch_optifine_changes
         shell: bash
         run: |
           cd ./optifine/scripts
@@ -53,7 +53,7 @@ jobs:
           cd ../..
 
       - name: Save changes
-        id: fetch_changes
+        id: save_changes
         shell: bash
         run: |
           git config --local user.name "github-actions[bot]"
@@ -72,7 +72,7 @@ jobs:
           fi
 
       - name: Push changes
-        if: steps.fetch_changes.outputs.changed == 'true'
+        if: steps.save_changes.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
