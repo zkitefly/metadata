@@ -49,7 +49,7 @@ jobs:
         run: |
           cd ./optifine/scripts
           python3 main.py
-          cp index.json ../
+          mv index.json ../
           cd ../..
 
       - name: Save changes

@@ -20,10 +20,10 @@ def get_page(url):
 def regex_search(pattern, text):
     return re.findall(pattern, text)
 
-# 读取已有的index.json文件
+# 读取已有的index-raw.json文件
 def read_existing_index():
-    if os.path.exists("index.json") and os.path.getsize("index.json") > 0:
-        with open("index.json", "r", encoding="utf-8") as file:
+    if os.path.exists("index-raw.json") and os.path.getsize("index-raw.json") > 0:
+        with open("index-raw.json", "r", encoding="utf-8") as file:
             return json.load(file)
     else:
         return {"download": [], "file": []}
@@ -67,12 +67,11 @@ def main():
         entry["name"] = names[i].replace(" ", "_").replace(entry["mcversion"] + "_", "")
         versions.append(entry)
 
-    # 读取已有的index.json文件
+    # 读取已有的index-raw.json文件
     existing_index = read_existing_index()
 
     # 覆盖download字段
     existing_index["download"] = [
-        ""
         "https://of-302-v.8mi.edu.pl/file/",
         "https://of-302-cf.8mi.edu.pl/file/",
         "https://of-302v.zkitefly.eu.org/file/",
@@ -111,16 +110,9 @@ def main():
     # 根据时间降序排序
     existing_index["file"] = sorted(existing_index["file"], key=lambda x: x["time"], reverse=True)
 
-    # 删除 file 列表中除了指定属性外的其他属性
-    for item in existing_index['file']:
-        item_keys = list(item.keys())
-        for key in item_keys:
-            if key not in ['mcversion', 'name', 'ispreview', 'filename', 'forge']:
-                del item[key]
-
-    # 将数据保存为index.json文件
-    with open("index.json", "w", encoding="utf-8") as file:
-        json.dump(existing_index, file)
+    # 将数据保存为index-raw.json文件
+    with open("index-raw.json", "w", encoding="utf-8") as file:
+        json.dump(existing_index, file, ensure_ascii=False)
 
 if __name__ == "__main__":
     main()
