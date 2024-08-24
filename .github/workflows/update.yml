@@ -9,6 +9,9 @@ on:
       - '.github/workflows/update.yml'
       - '*.py'
 
+permissions:
+  contents: write # 为 GITHUB_TOKEN 设置对代码库内容的写权限
+
 jobs:
   update_forge-metadata:
     runs-on: ubuntu-latest
