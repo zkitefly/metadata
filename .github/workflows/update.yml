@@ -52,6 +52,7 @@ jobs:
         run: |
           cd ./optifine/scripts
           python3 main.py
+          python3 converter.py
           mv index.json ../
           cd ../..
 
