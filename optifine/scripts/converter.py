@@ -8,7 +8,7 @@ with open('index-raw.json', 'r') as f:
 for item in data['file']:
     item_keys = list(item.keys())
     for key in item_keys:
-        if key not in ['mcversion', 'name', 'ispreview', 'filename', 'forge']:
+        if key not in ['mcversion', 'name', 'filename']:
             del item[key]
 
 # 输出至新的 JSON 文件
