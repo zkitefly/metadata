@@ -27,7 +27,7 @@ def process_version(version):
         "mcversion": mcversion,
         "modified": 0,
         "version": forgeversion,
-        "files": [["txt","changelog"],["jar","installer"]],
+        "files": [["jar","installer"]],
         # "rawversion": version
     }
 
@@ -40,15 +40,15 @@ def process_json(input_file, output_file):
 
     mcversion_data = {}
     numbered_data = {
-        "adfocus": "271228",
+        # "adfocus": "271228",
         "artifact": "forge",
-        "homepage": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/",
-        "name": "Minecraft Forge",
+        # "homepage": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/",
+        # "name": "Minecraft Forge",
         "webpath": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/",
-        "branches": {},
+        # "branches": {},
         "mcversion": {},
         "number": {},
-        "promos": {}
+        # "promos": {}
     }
     
     for version_data in processed_versions:
