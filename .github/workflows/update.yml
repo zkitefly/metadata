@@ -7,7 +7,7 @@ on:
   push:
     paths: 
       - '.github/workflows/update.yml'
-      - '*.py'
+      - '**.py'
 
 permissions:
   contents: write # 为 GITHUB_TOKEN 设置对代码库内容的写权限
@@ -43,7 +43,7 @@ jobs:
           python3 main.py
           python3 install.py
           python3 gettime.py
-          cp index.json ../
+          mv index.json ../
           cd ../..
 
       - name: Fetch optifine-metadata changes
