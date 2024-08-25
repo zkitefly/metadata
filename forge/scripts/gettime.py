@@ -63,26 +63,30 @@ def process_entry(key, entry):
 
     # 解压缩文件，查找 version.json 或 install_profile.json
     time = None
-    with zipfile.ZipFile(file_name, 'r') as jar_file:
-        if 'version.json' in jar_file.namelist():
-            with jar_file.open('version.json') as f:
-                version_data = json.load(f)
-                time_str = version_data.get('time', None)
-                if time_str:
-                    try:
-                        time = int(date_parser.parse(time_str).timestamp())
-                    except ValueError:
-                        print(f"Failed to parse time string '{time_str}' in version.json")
-        if not time and 'install_profile.json' in jar_file.namelist():
-            with jar_file.open('install_profile.json') as f:
-                install_data = json.load(f)
-                version_info = install_data.get('versionInfo', {})
-                time_str = version_info.get('time', None)
-                if time_str:
-                    try:
-                        time = int(date_parser.parse(time_str).timestamp())
-                    except ValueError:
-                        print(f"Failed to parse time string '{time_str}' in install_profile.json")
+    try:
+        with zipfile.ZipFile(file_name, 'r') as jar_file:
+            if 'version.json' in jar_file.namelist():
+                with jar_file.open('version.json') as f:
+                    version_data = json.load(f)
+                    time_str = version_data.get('time', None)
+                    if time_str:
+                        try:
+                            time = int(date_parser.parse(time_str).timestamp())
+                        except ValueError:
+                            print(f"Failed to parse time string '{time_str}' in version.json")
+            if not time and 'install_profile.json' in jar_file.namelist():
+                with jar_file.open('install_profile.json') as f:
+                    install_data = json.load(f)
+                    version_info = install_data.get('versionInfo', {})
+                    time_str = version_info.get('time', None)
+                    if time_str:
+                        try:
+                            time = int(date_parser.parse(time_str).timestamp())
+                        except ValueError:
+                            print(f"Failed to parse time string '{time_str}' in install_profile.json")
+    except (zipfile.BadZipFile, json.JSONDecodeError) as e:
+        print(f"Error reading or parsing ZIP file: {e}")
+        return
 
     # 保存当前条目的时间信息
     if time:
@@ -112,18 +116,11 @@ with ThreadPoolExecutor(max_workers=20) as executor:
 with open('time.json', 'r') as f:
     time_data = json.load(f)
 
-# 遍历 time.json 中的条目并转换时间戳
+# 遍历 time.json 中的条目并更新 index.json
 for entry in time_data:
     build = entry['build']
     version = entry['version']
-    iso_time = entry['time']
-
-    # 将 ISO 8601 格式的时间字符串转换为 Unix 时间戳
-    try:
-        unix_timestamp = int(date_parser.parse(iso_time).timestamp())
-    except ValueError:
-        print(f"Failed to parse time string '{iso_time}' in time.json")
-        continue
+    unix_timestamp = entry['time']
 
     # 在 index.json 中找到对应条目并更新 modified 属性
     for key, list_entry in data['number'].items():
