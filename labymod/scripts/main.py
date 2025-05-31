@@ -1,7 +1,7 @@
 import json
 import requests
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 def fetch_json(url):
     """从URL获取JSON数据"""
@@ -29,6 +29,18 @@ def save_json(data, filepath, version_id=None):
         print(f"已保存: {filepath}")
     except Exception as e:
         print(f"保存文件时出错: {e}")
+
+def parse_and_adjust_time(time_str):
+    """解析时间字符串并将其提前一秒"""
+    if not time_str:
+        return None
+    try:
+        dt = datetime.fromisoformat(time_str.replace('Z', '+00:00'))
+        adjusted_dt = dt + timedelta(seconds=1)
+        return adjusted_dt.isoformat()
+    except Exception as e:
+        print(f"处理时间时出错: {e}")
+        return time_str
 
 def main():
     # 创建目录
@@ -64,14 +76,23 @@ def main():
                 version_release_time = version_data.get("releaseTime")
                 version_type = version_data.get("type")
                 
-                # 添加到索引，包含时间信息
+                # 调整时间
+                adjusted_time = parse_and_adjust_time(version_time)
+                adjusted_release_time = parse_and_adjust_time(version_release_time)
+                
+                # 添加到索引，包含调整后的时间信息
                 index_data["versions"].append({
                     "id": version_id,
                     "type": version_type,
-                    "path": f"versions/{version_id}.json",
-                    "time": version_time,
-                    "releaseTime": version_release_time
+                    "url": f"https://zkitefly.github.io/metadata/labymod/versions/{version_id}.json",
+                    "time": adjusted_time,
+                    "releaseTime": adjusted_release_time
                 })
+                
+                # 更新版本数据中的时间
+                if version_data:
+                    version_data["time"] = adjusted_time
+                    version_data["releaseTime"] = adjusted_release_time
                 
                 version_filepath = f"versions/{version_id}.json"
                 save_json(version_data, version_filepath, version_id)

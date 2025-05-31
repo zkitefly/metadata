@@ -556,8 +556,8 @@
   },
   "mainClass": "net.minecraft.launchwrapper.Launch",
   "minimumLauncherVersion": 21,
-  "releaseTime": "2022-08-05T11:57:05+00:00",
-  "time": "2022-08-05T11:57:05+00:00",
+  "releaseTime": "2022-08-05T11:57:06+00:00",
+  "time": "2022-08-05T11:57:06+00:00",
   "type": "release",
   "_minecraftVersion": "1.19.2"
 }
