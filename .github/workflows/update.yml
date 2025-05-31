@@ -56,6 +56,16 @@ jobs:
           mv index.json ../
           cd ../..
 
+      - name: Fetch labymod-metadata changes
+        id: fetch_labymod_changes
+        shell: bash
+        run: |
+          cd ./labymod/scripts
+          python3 main.py
+          mv index.json ../
+          mv versions ../
+          cd ../..
+
       - name: Save changes
         id: save_changes
         shell: bash
