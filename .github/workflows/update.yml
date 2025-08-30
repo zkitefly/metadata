@@ -46,6 +46,18 @@ jobs:
           mv index.json ../
           cd ../..
 
+      - name: Fetch cleanroom-metadata changes
+        id: fetch_cleanroom_changes
+        shell: bash
+        run: |
+          cd ./cleanroom/scripts
+          python3 main.py
+          mv index.json ../
+          mv files ../
+          cd ../..
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - name: Fetch optifine-metadata changes
         id: fetch_optifine_changes
         shell: bash
