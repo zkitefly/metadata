@@ -32,7 +32,7 @@ def save_index(releases):
     
     # 保存为 JSON 文件
     with open(index_path, 'w', encoding='utf-8') as f:
-        json.dump(releases, f, indent=2)
+        json.dump(releases, f)
 
 def download_files(releases):
     # 创建 files 目录
