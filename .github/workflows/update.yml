@@ -53,6 +53,7 @@ jobs:
           cd ./cleanroom/scripts
           python3 main.py
           mv index.json ../
+          rm -rf ../files
           mv files ../
           cd ../..
         env:
