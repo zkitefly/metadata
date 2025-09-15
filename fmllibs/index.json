@@ -3,289 +3,289 @@
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     }
   ],
   "1.4": [
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     },
     {
       "name": "bcprov-jdk15on-147.jar",
       "sha1": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-147.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-147.jar"
     }
   ],
   "1.4.1": [
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     },
     {
       "name": "bcprov-jdk15on-147.jar",
       "sha1": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-147.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-147.jar"
     }
   ],
   "1.4.2": [
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     },
     {
       "name": "bcprov-jdk15on-147.jar",
       "sha1": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-147.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-147.jar"
     }
   ],
   "1.4.3": [
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     },
     {
       "name": "bcprov-jdk15on-147.jar",
       "sha1": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-147.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-147.jar"
     }
   ],
   "1.4.4": [
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     },
     {
       "name": "bcprov-jdk15on-147.jar",
       "sha1": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-147.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-147.jar"
     }
   ],
   "1.4.5": [
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     },
     {
       "name": "bcprov-jdk15on-147.jar",
       "sha1": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-147.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-147.jar"
     }
   ],
   "1.4.6": [
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     },
     {
       "name": "bcprov-jdk15on-147.jar",
       "sha1": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-147.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-147.jar"
     }
   ],
   "1.4.7": [
     {
       "name": "argo-2.25.jar",
       "sha1": "bb672829fde76cb163004752b86b0484bd0a7f4b",
-      "url": "https://hmcl-dev.github.io/metadata/argo-2.25.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-2.25.jar"
     },
     {
       "name": "guava-12.0.1.jar",
       "sha1": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
-      "url": "https://hmcl-dev.github.io/metadata/guava-12.0.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-12.0.1.jar"
     },
     {
       "name": "asm-all-4.0.jar",
       "sha1": "98308890597acb64047f7e896638e0d98753ae82",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.0.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.0.jar"
     },
     {
       "name": "bcprov-jdk15on-147.jar",
       "sha1": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-147.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-147.jar"
     }
   ],
   "1.5": [
     {
       "name": "argo-small-3.2.jar",
       "sha1": "58912ea2858d168c50781f956fa5b59f0f7c6b51",
-      "url": "https://hmcl-dev.github.io/metadata/argo-small-3.2.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-small-3.2.jar"
     },
     {
       "name": "guava-14.0-rc3.jar",
       "sha1": "931ae21fa8014c3ce686aaa621eae565fefb1a6a",
-      "url": "https://hmcl-dev.github.io/metadata/guava-14.0-rc3.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-14.0-rc3.jar"
     },
     {
       "name": "asm-all-4.1.jar",
       "sha1": "054986e962b88d8660ae4566475658469595ef58",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.1.jar"
     },
     {
       "name": "bcprov-jdk15on-148.jar",
       "sha1": "960dea7c9181ba0b17e8bab0c06a43f0a5f04e65",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-148.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-148.jar"
     },
     {
       "name": "deobfuscation_data_1.5.zip",
       "sha1": "5f7c142d53776f16304c0bbe10542014abad6af8",
-      "url": "https://hmcl-dev.github.io/metadata/deobfuscation_data_1.5.zip"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/deobfuscation_data_1.5.zip"
     },
     {
       "name": "scala-library.jar",
       "sha1": "458d046151ad179c85429ed7420ffb1eaf6ddf85",
-      "url": "https://hmcl-dev.github.io/metadata/scala-library.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/scala-library.jar"
     }
   ],
   "1.5.1": [
     {
       "name": "argo-small-3.2.jar",
       "sha1": "58912ea2858d168c50781f956fa5b59f0f7c6b51",
-      "url": "https://hmcl-dev.github.io/metadata/argo-small-3.2.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-small-3.2.jar"
     },
     {
       "name": "guava-14.0-rc3.jar",
       "sha1": "931ae21fa8014c3ce686aaa621eae565fefb1a6a",
-      "url": "https://hmcl-dev.github.io/metadata/guava-14.0-rc3.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-14.0-rc3.jar"
     },
     {
       "name": "asm-all-4.1.jar",
       "sha1": "054986e962b88d8660ae4566475658469595ef58",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.1.jar"
     },
     {
       "name": "bcprov-jdk15on-148.jar",
       "sha1": "960dea7c9181ba0b17e8bab0c06a43f0a5f04e65",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-148.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-148.jar"
     },
     {
       "name": "deobfuscation_data_1.5.1.zip",
       "sha1": "22e221a0d89516c1f721d6cab056a7e37471d0a6",
-      "url": "https://hmcl-dev.github.io/metadata/deobfuscation_data_1.5.1.zip"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/deobfuscation_data_1.5.1.zip"
     },
     {
       "name": "scala-library.jar",
       "sha1": "458d046151ad179c85429ed7420ffb1eaf6ddf85",
-      "url": "https://hmcl-dev.github.io/metadata/scala-library.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/scala-library.jar"
     }
   ],
   "1.5.2": [
     {
       "name": "argo-small-3.2.jar",
       "sha1": "58912ea2858d168c50781f956fa5b59f0f7c6b51",
-      "url": "https://hmcl-dev.github.io/metadata/argo-small-3.2.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/argo-small-3.2.jar"
     },
     {
       "name": "guava-14.0-rc3.jar",
       "sha1": "931ae21fa8014c3ce686aaa621eae565fefb1a6a",
-      "url": "https://hmcl-dev.github.io/metadata/guava-14.0-rc3.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/guava-14.0-rc3.jar"
     },
     {
       "name": "asm-all-4.1.jar",
       "sha1": "054986e962b88d8660ae4566475658469595ef58",
-      "url": "https://hmcl-dev.github.io/metadata/asm-all-4.1.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/asm-all-4.1.jar"
     },
     {
       "name": "bcprov-jdk15on-148.jar",
       "sha1": "960dea7c9181ba0b17e8bab0c06a43f0a5f04e65",
-      "url": "https://hmcl-dev.github.io/metadata/bcprov-jdk15on-148.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/bcprov-jdk15on-148.jar"
     },
     {
       "name": "deobfuscation_data_1.5.2.zip",
       "sha1": "446e55cd986582c70fcf12cb27bc00114c5adfd9",
-      "url": "https://hmcl-dev.github.io/metadata/deobfuscation_data_1.5.2.zip"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/deobfuscation_data_1.5.2.zip"
     },
     {
       "name": "scala-library.jar",
       "sha1": "458d046151ad179c85429ed7420ffb1eaf6ddf85",
-      "url": "https://hmcl-dev.github.io/metadata/scala-library.jar"
+      "url": "https://hmcl-dev.github.io/metadata/fmllibs/scala-library.jar"
     }
   ]
 }
