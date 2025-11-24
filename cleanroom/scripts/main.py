@@ -18,9 +18,11 @@ def get_releases():
     # 提取所需的字段
     releases = []
     for release in response.json():
+        downloadUrl = f"https://github.com/CleanroomMC/Cleanroom/releases/download/{release['name']}/cleanroom-{release['name']}-installer.jar"
         releases.append({
             "name": release["name"],
-            "created_at": release["created_at"]
+            "created_at": release["created_at"],
+            "downloadUrl": downloadUrl
         })
     
     return releases
@@ -41,19 +43,16 @@ def download_files(releases):
     files_dir.mkdir(exist_ok=True)
     
     for release in releases:
-        filename = f"cleanroom-{release['name']}-installer.jar"
+        download_url = release['downloadUrl']
         file_path = files_dir / filename
         
         # 如果文件已存在，跳过下载
         if file_path.exists():
-            print(f"跳过已存在的文件: {filename}")
+            print(f"跳过已存在的文件: {download_url}")
             continue
         
-        # 构建下载URL
-        download_url = f"https://github.com/CleanroomMC/Cleanroom/releases/download/{release['name']}/cleanroom-{release['name']}-installer.jar"
-        
         try:
-            print(f"正在下载: {filename}")
+            print(f"正在下载: {download_url}")
             response = requests.get(download_url, stream=True)
             response.raise_for_status()
             
@@ -62,9 +61,9 @@ def download_files(releases):
                 for chunk in response.iter_content(chunk_size=8192):
                     f.write(chunk)
             
-            print(f"下载完成: {filename}")
+            print(f"下载完成: {download_url}")
         except Exception as e:
-            print(f"下载 {filename} 时出错: {str(e)}")
+            print(f"下载 {download_url} 时出错: {str(e)}")
 
 def main():
     try:
