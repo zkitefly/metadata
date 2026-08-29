@@ -21,13 +21,23 @@ def process_version(version):
     else:
         count = 0  # Default count if the structure doesn't match expected patterns
 
+    if mcversion in {'1.1', '1.2.3', '1.2.4', '1.2.5'}:
+        files = [["zip", "client"]]
+    elif mcversion in {
+        '1.3.2', '1.4.0', '1.4.1', '1.4.2', '1.4.3',
+        '1.4.4', '1.4.5', '1.4.6', '1.4.7', '1.5', '1.5.0', '1.5.1'
+    }:
+        files = [["zip", "universal"]]
+    else:
+        files = [["jar", "installer"]]
+
     return {
         "branch": branch,
         "build": count,
         "mcversion": mcversion,
         "modified": 0,
         "version": forgeversion,
-        "files": [["jar","installer"]],
+        "files": files,
         # "rawversion": version
     }
 
