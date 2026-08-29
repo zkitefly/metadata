@@ -134,6 +134,15 @@ def process_entry(key, entry):
                         except Exception as e:
                             print(f"Failed to get timestamp from {name} for build {build}: {e}")
                         break
+            # 5. 新增：查找 forge/ForgeHooks.class，使用 ZIP 条目时间戳
+            if not time and 'forge/ForgeHooks.class' in jar_file.namelist():
+                try:
+                    zip_info = jar_file.getinfo('forge/ForgeHooks.class')
+                    dt = datetime(*zip_info.date_time, tzinfo=timezone.utc)
+                    time = int(dt.timestamp())
+                    print(f"Using forge/ForgeHooks.class timestamp for build {build}: {time}")
+                except Exception as e:
+                    print(f"Failed to get timestamp from forge/ForgeHooks.class for build {build}: {e}")
 
     except (zipfile.BadZipFile, json.JSONDecodeError) as e:
         print(f"Error reading or parsing ZIP file: {e}")
