@@ -5,9 +5,9 @@ on:
   schedule:
     - cron: '* */12 * * *' # 每12个小时运行一次
   push:
-    paths: 
+    paths:
       - '.github/workflows/update.yml'
-      - '**.py'
+      - '**.mjs'
 
 permissions:
   pages: write
@@ -24,35 +24,24 @@ jobs:
       - uses: actions/checkout@v6
       - name: Set time
         run: sudo timedatectl set-timezone 'Asia/Shanghai'
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
         with:
-          python-version: '3.x'
-      - name: Install dependencies
-        run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install xmljson requests python-dateutil
+          node-version: '22'
       - name: Fetch forge-metadata changes
         run: |
           cd ./forge/scripts
-          python3 xml_to_json.py
-          python3 main.py
-          python3 install.py
-          python3 gettime.py
-          mv index.json ../
+          node update.mjs
       - name: Fetch cleanroom-metadata changes
         run: |
           cd ./cleanroom/scripts
-          python3 main.py
-          mv index.json ../
+          node update.mjs
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Fetch optifine-metadata changes
         run: |
           cd ./optifine/scripts
-          python3 main.py
-          python3 converter.py
-          mv index.json ../
+          node update.mjs
       - name: Commit changes
         run: |
           git config --local user.name "github-actions[bot]"
